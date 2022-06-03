@@ -11191,10 +11191,6 @@ a, p, h1, .h1, h2, .h2, h3, .h3 {
   box-shadow: 5px 5px 20px #000;
 }
 
-.o-story {
-  width: 100%;
-}
-
 .c-bloc-stories__title {
   font-family: EB Garamond;
   font-size: 3.5rem;
@@ -11209,4 +11205,10 @@ a, p, h1, .h1, h2, .h2, h3, .h3 {
 .o-story__img {
   width: 100%;
   border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 575.98px) {
+  .o-story {
+    width: 100%;
+  }
 }
