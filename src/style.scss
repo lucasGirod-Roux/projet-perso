@@ -1,0 +1,86 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../src/variable.scss";
+/*  Générique  */
+body{
+    background-color: $black;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+a,p,h1,h2,h3{
+    color: $white;
+}
+
+[class].header-navbar{
+    padding:10px 15px;
+
+    background-color: $white;
+}
+.bloc-slogan{
+    text-align: center;
+    padding: 2*$spacer;
+}
+.bloc-text{
+    padding: 3rem;
+    background-color: $white;
+    margin-bottom: 5rem;
+}
+.bloc-text__title{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.bloc-text__title ,.bloc-text__paragraph{
+    color: $black;
+}
+.marque-page {
+    display: block;
+    padding: 10px 0 3px 0;
+    font-size: 1.2rem;
+    font-weight: $font-weight-normal;
+}
+
+.c-bloc-stories{
+    background-color: $secondary;
+    text-align: center;
+    padding: 3rem;
+
+    h2{
+        padding-bottom: 2rem;
+    }
+}
+.o-story{
+    width: 400px;
+
+    margin: auto;
+    padding: 0;
+
+    background-color: $white;
+    border-radius: 20px;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 5px 5px 20px $black;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .o-story{
+        width: 100%;
+    }
+}
+.c-bloc-stories__title{
+    font-family: EB Garamond;
+    font-size: 3.5rem;
+}
+.o-strory__title{
+    color: $black;
+    padding-top: 10px ;
+    font-family: 'Creepster', cursive;
+}
+.o-story__img{
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
